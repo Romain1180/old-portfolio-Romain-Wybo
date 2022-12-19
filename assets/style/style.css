@@ -1,0 +1,464 @@
+@font-face {
+    font-family: "Game Of Squids";
+    src: url("../fonts/GameOfSquids.otf") format("opentype");
+}
+   
+body{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    background-color: #1B1926;
+    /* overflow-x: hidden; */
+}
+
+/* header */
+header{
+    height: 90vh;
+    background-color: #262335;
+}
+
+.container-header{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: 100%;
+}
+
+.my-name{
+    display: flex;
+    justify-content: center;
+}
+
+.my-name h1{
+    font-family: Game Of Squids;
+    color: white;
+    font-size: 5.5em;
+    margin-top: 15vh;
+}
+
+.contact-header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.contact-header h2{
+    color: #E5313B;
+    font-family: 'Roboto Mono', monospace;
+    text-transform: uppercase;
+    font-size: 2em;
+}
+
+.contact-header p{
+    font-family: 'Roboto Mono', monospace;
+    font-size: 1.3em;
+    color: white;
+}
+
+.icon-header{
+    width: 15%;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 3vh;
+}
+
+.icon-header img{
+    transition: .3s ease-in-out;
+}
+
+.icon-header img:hover{
+    transform: scale(1.05);
+}
+
+/* nav */
+nav{
+    background-color: #E5313B;
+    height: 10vh;
+    top: 0%;
+    position: sticky;
+    z-index: 100;
+}
+
+.container-nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: #262335;
+    font-family: 'Roboto Mono', monospace;
+    font-weight: bold;
+    font-size: 1.2em;
+    margin-top: 0%;
+    height: 100%;
+}
+
+.lst-nav{
+    display: flex;
+    gap: 3vh;
+}
+
+.lst-nav a {
+    text-decoration: none;
+    color: #262335;
+    position: relative;
+    transition: .2s ease-in-out;
+}
+
+.lst-nav a::after{
+    content: "";
+    transform-origin: 0 0;
+    transform: scaleX(0);
+    position: absolute;
+    bottom: -4px;
+    left: 0;
+    right: 0;
+    height: 3px;
+    background: #262335;
+    z-index: 1;
+    transition: .4s ease-in-out;
+}
+
+.lst-nav a:hover::after{
+    transform: scaleX(1);
+}
+
+.lst-nav li {
+    list-style: none;
+    margin: 20px;
+}
+
+/* first banner */
+.banner-img1{
+    background-image: url(../img/png/Groupe\ 11.png);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    width: 100%;
+    height: 50vh;
+}
+
+.formations-container {
+    background-image: url(../img/png/background.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    width: 100%;
+    height: 100vh;
+    font-family: 'Roboto Mono', monospace;
+    color: #E5313B;
+    display: flex;
+    justify-content: space-around;
+}
+
+.formations{
+    display: flex;
+    width: 70vw;
+    gap: 15vh;
+}
+
+.title-formations{
+    font-family: Game Of Squids;
+    text-transform: uppercase;
+    color: #25E1ED;
+    display: flex;
+    justify-content: center;
+    font-size: 2em;
+}
+
+.lst-formations{
+    background-color: #262335;
+    border-left: 2px solid #E5313B;
+    border-right: 2px solid #E5313B;
+    padding: 3vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.lst-formations p{ 
+    font-size: 1.2em;
+}
+
+
+.lst-formations span{
+    font-style: italic;
+    font-weight: lighter;
+}
+
+.myself{
+    background-color: #262335;
+    border-left: 2px solid #E5313B;
+    border-right: 2px solid #E5313B;
+    border-top: 2px solid #E5313B;
+    width: 30vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 15vh;
+}
+
+.myself img{
+    width: 100%;
+}
+
+.myself p{
+    padding: 3vh;
+}
+
+.myself h2{
+    font-family: Game Of Squids;
+    text-transform: uppercase;
+    font-size: 2em;
+}
+
+.myself span{
+    color: #25E1ED;
+}
+
+/* comptétences */
+.container-competences{
+    background-color: #262335;
+    height: 110vh;
+    margin-top: -2%;
+}
+
+.container-competences h2{
+    display: flex;
+    justify-content: center;
+    color: #25E1ED;
+    font-family: Game Of Squids;
+    text-transform: uppercase;
+    padding: 10vh;
+    font-size: 3em;
+}
+
+.cards
+{
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center; 
+    transform-style: preserve-3d;
+    gap: 10vh;
+}
+
+.cards img{
+    width: 25vh;
+    transform-style: preserve-3d;
+}
+
+.card
+{
+    transform-style: preserve-3d;
+}
+
+.card h3
+{
+    color: #E5313B;
+    font-family: 'Roboto Mono', monospace;
+    font-weight: bold;
+    font-size: 1.5rem;
+    padding: 20px;
+    text-align: center;
+    position: absolute;
+    margin-top: -35%;
+    transform: translateZ(15px);
+}
+
+.card1 h3{
+    margin-left: 90px;
+}
+
+.card2 h3{
+    margin-left: 100px;
+}
+
+.card3 h3{
+    margin-left: 17px;
+}
+
+.card4 h3{
+    margin-left: 19px;
+}
+
+.mid-container{
+    width: 70vw;
+}
+
+.container-competences hr{
+    height: 2px;
+    background-color: #E5313B;
+    border: none;
+    margin-top: 10vh;
+    margin-left: 40vh;
+    margin-right: 40vh;
+}
+
+.container-competences h4{
+    font-family: 'Roboto Mono', monospace;
+    font-size: 1.5em;
+    margin: 7vh;
+    text-transform: uppercase;
+    color: #25E1ED;
+    display: flex;
+    justify-content: center;
+    
+}
+
+.cards-adobe{
+    display: flex;
+    justify-content: space-evenly;
+    margin-left: 40vh;
+    margin-right: 40vh;
+    flex-wrap: wrap;
+}
+
+.cards-adobe img{
+    transition: .3s ease-in-out;
+}
+
+.cards-adobe img:hover{
+    transform: scale(1.05);
+}
+
+/* work */
+
+.work-container{
+    background-color: #262335;
+    color: #E5313B;
+    font-family: 'Roboto Mono', monospace;
+    height: 100vh;
+    margin-top: -2%;
+}
+
+.work-container h2{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    color: #25E1ED;
+    text-transform: uppercase;
+    font-family: Game Of Squids;
+    padding: 10vh;
+    font-size: 3em;
+}
+
+.img-work-container{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.img-work-container img{
+    width: 20vw;
+}
+
+.experience-container p{
+    font-size: 1.4em;
+}
+
+.experience-container span{
+    font-style: italic;
+    font-weight: lighter;
+}
+
+/* footer */
+footer{
+    background-color: #E5313B;
+    color: #262335;
+    font-family: 'Roboto Mono', monospace;
+}
+
+.container-footer{
+    margin-left: 40vh;
+    margin-right: 40vh;
+    height: 40vh;
+    margin-top: -1%;
+}
+
+.nav-footer{
+    display: flex;
+    justify-content: flex-start;
+    gap: 10vh;
+    font-weight: bold;
+    font-size: 1.2em;
+    padding: 5vh;
+}
+
+.nav-footer li {list-style: none;}
+
+.nav-footer a{
+    color: #262335;
+    text-decoration: none;
+    transition: .2s ease-in-out;
+}
+
+.nav-footer a::after{
+    content: "";
+    transform-origin: 0 0;
+    transform: scaleX(0);
+    position: absolute;
+    bottom: -4px;
+    left: 0;                            /* a corriger */
+    right: 0;                                    
+    height: 3px;
+    background: #262335;
+    z-index: 1;
+    transition: .4s ease-in-out;
+}
+
+.nav-footer a:hover::after{
+    transform: scaleX(1);
+    color: white;
+}
+
+.container-footer hr{
+    height: 2px;
+    background-color: #262335;
+    border: none;
+    width: 100%;
+}
+
+.contact-footer{
+    display: flex;
+    flex-direction: column;
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+.icon-footer img{
+    transition: .3s ease-in-out;
+}
+
+.icon-footer img:hover{
+   transform: scale(1.05);
+}
+
+.copyright-footer {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    font-weight: bold;
+    line-height: 1vh;
+}
+
+/* sroll-bar */
+::-webkit-scrollbar {
+    width: 1.2vw;
+    height: 2vh;
+}
+
+::-webkit-scrollbar-track {
+    background-color: #1B1926;
+    margin-top: 3px;
+    margin-bottom: 3px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #25E1ED;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: #E5313B;
+}
