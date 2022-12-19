@@ -495,6 +495,12 @@ footer{
 /* mobile/ipad responsive */
 @media only screen and (max-width:820px) {
 
+    ::-webkit-scrollbar {
+        width: 0vw;
+        height: 0vh;
+    }
+    
+
     body{
         overflow-x: hidden;
         /* background-color: green; */
