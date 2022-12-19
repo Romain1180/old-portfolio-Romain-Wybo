@@ -302,10 +302,6 @@ nav{
     margin-left: 19px;
 }
 
-.mid-container{
-    width: 70vw;
-}
-
 .a-card p{
     color: #E5313B;
     font-family: 'Roboto Mono', monospace;
@@ -499,7 +495,6 @@ footer{
         width: 0vw;
         height: 0vh;
     }
-    
 
     body{
         overflow-x: hidden;
@@ -517,10 +512,19 @@ footer{
     
     .my-name h1{
         font-size: 2.5em;
+        margin-top: 17vh;
     }
 
     .container-nav{
         display: none;
+    }
+
+    .contact-header h2{
+        font-size: 1.5em;
+    }
+
+    .contact-header P{
+        font-size: 1em;
     }
 
     .icon-header{
@@ -635,6 +639,10 @@ footer{
     .card2 h3{
         display: flex;
         margin-left: 60px;
+    }
+
+    .second-part{
+        margin-top: -10%;
     }
 
     .cards-adobe{
