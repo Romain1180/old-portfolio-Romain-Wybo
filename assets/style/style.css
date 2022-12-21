@@ -577,7 +577,7 @@ footer{
 
     .myself{
         background-color: #262335;
-        border: 2px solid #E5313B;
+        border: 0px;
         width: 100vw;
         margin-top: 0vh;
     }
