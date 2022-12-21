@@ -540,45 +540,38 @@ footer{
 
     /* first banner */
     .banner-img1{
-        background-image: url(../img/svg/Groupe\ 18.svg);
+        background-image: url(../img/png/mobile-bg1.png);
         background-repeat: no-repeat; 
-        background-attachment: fixed; 
-        background-position: left;
+        background-attachment:fixed; 
+        background-position: center;
         width: 100%;
-        height: 20vh;
-        overflow-x: hidden;
+        height: 20%;
     }
 
     /* second banner */
     .banner-img2{
-        background-image: url(../img/svg/Groupe\ 19.svg);
+        background-image: url(../img/png/mobile-bg2.png);
         background-repeat: no-repeat;
         background-attachment: fixed;
-        background-position: left;
+        background-position: center;
         width: 100%;
-        height: 70vh;
+        height: 20%;
     }
 
     /* third banner */
     .banner-img3{
-        background-image: url(../img/svg/Groupe\ 20.svg);
+        background-image: url(../img/png/mobile-bg3.png);
         background-repeat: no-repeat;
         background-attachment: fixed;
-        background-position: left;
+        background-position: center;
         width: 100%;
-        height: 20vh;
+        height: 20%;
     }
 
     /* formation */
     .formations-container {
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-attachment: fixed;
         width: 100%;
-        height: 200vh;
-        font-family: 'Roboto Mono', monospace;
-        color: #E5313B;
-        display: flex;
+        height: 250vh;
     }
 
     .formations{
@@ -597,7 +590,6 @@ footer{
         background-color: #262335;
         border: 2px solid #E5313B;
         width: 100vw;
-        /* margin-top: 15vh; */
     }
     
     .myself img{
