@@ -585,8 +585,6 @@ footer{
         border: 0px;
         width: 100vw;
         margin-top: 0vh;
-        border-top: 2px solid #E5313B;
-        border-bottom: 2px solid #E5313B;
     }
     
     .myself img{
@@ -597,13 +595,15 @@ footer{
         padding: 3vh;
     }
 
+    .myself h2{
+        margin-bottom: 9vh;
+    }
+
     /* compétences */
     .container-competences{
         background-color: #262335;
         margin-top: -10%;
         height: 200vh;
-        border-top: 2px solid #E5313B;
-        border-bottom: 2px solid #E5313B;
     }
 
     .container-competences h2{
