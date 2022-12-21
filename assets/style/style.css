@@ -8,7 +8,6 @@ body{
     padding: 0%;
     box-sizing: border-box;
     background-color: #1B1926;
-    /* overflow-x: hidden; */
 }
 
 /* header */
@@ -401,11 +400,12 @@ footer{
 
 .nav-footer{
     display: flex;
-    justify-content: flex-start;
+    justify-content: start;
     gap: 10vh;
     font-weight: bold;
-    font-size: 1.2em;
+    font-size: 1em;
     padding: 5vh;
+    padding-left: 0%;
 }
 
 .nav-footer li {list-style: none;}
@@ -413,6 +413,7 @@ footer{
 .nav-footer a{
     color: #262335;
     text-decoration: none;
+    position: relative;
     transition: .2s ease-in-out;
 }
 
@@ -422,7 +423,7 @@ footer{
     transform: scaleX(0);
     position: absolute;
     bottom: -4px;
-    left: 0;                            /* a corriger */
+    left: 0;                      
     right: 0;                                    
     height: 3px;
     background: #262335;
@@ -490,16 +491,6 @@ footer{
 
 /* mobile/ipad responsive */
 @media only screen and (max-width:1024px) {
-
-    ::-webkit-scrollbar {
-        width: 0vw;
-        height: 0vh;
-    }
-
-    body{
-        overflow-x: hidden;
-        /* background-color: green; */
-    }
 
     header{
         width: 100%;
@@ -570,6 +561,7 @@ footer{
 
     /* formation */
     .formations-container {
+        background-image: none;
         width: 100%;
         height: 250vh;
     }
@@ -590,6 +582,7 @@ footer{
         background-color: #262335;
         border: 2px solid #E5313B;
         width: 100vw;
+        margin-top: 0vh;
     }
     
     .myself img{
@@ -674,7 +667,6 @@ footer{
         font-size: 1em;
     }
 
-
     /* footer */
     .container-footer{
         margin-left: 0%;
@@ -689,6 +681,7 @@ footer{
         align-items: center;
         flex-direction: column;
         text-align: center;
+        padding: 5vh;
     }
 
     .container-footer hr{
