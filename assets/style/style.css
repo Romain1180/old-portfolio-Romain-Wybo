@@ -223,6 +223,11 @@ nav{
     padding: 3vh;
 }
 
+
+.wrapper-formations img{
+    width: 30vh;
+}
+
 .myself{
     background-color: #262335;
     border-left: 2px solid #E5313B;
