@@ -221,7 +221,7 @@ nav{
 
 .wrapper-formations img{
     width: 30vh;
-    margin-bottom: 10vh;
+    padding-bottom: 10vh;
 }
 
 .myself{
@@ -387,7 +387,6 @@ nav{
 .img-work-container img{
     width: 20vw;
 }
-
 
 .experience-container{
     background-color: #262335;
