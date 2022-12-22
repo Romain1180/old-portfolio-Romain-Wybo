@@ -221,6 +221,7 @@ nav{
 
 .wrapper-formations img{
     width: 30vh;
+    margin-bottom: 10vh;
 }
 
 .myself{
@@ -581,8 +582,7 @@ footer{
     /* formation */
     #formations{
         margin-top: 100vh;
-        border-top: 2px solid #E5313B;
-        border-bottom: 2px solid #E5313B;
+        border: none;
     }
     
     .formations-container {
@@ -665,23 +665,19 @@ footer{
         padding: 1vh;
         height: 150vh;
         margin-top: -2%;
-        padding: 3vh;
+        padding: 0%;
     }
     
     .work-container h2{
         padding: 5vh;
     }
 
-    .img-work-container{
-        display: flex;
-        justify-content: center;
-        flex-direction: column-reverse;
-        align-items: center;
-        flex-wrap: wrap;
-    }
-
     .img-work-container img{
         display: none;
+    }
+    
+    .experience-container{
+        border: none;
     }
 
     .experience-container p{
