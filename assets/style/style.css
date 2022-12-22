@@ -206,10 +206,6 @@ nav{
     font-size: 1.1em;
 }
 
-.lst-formations img{
-    width: 30vh;
-}
-
 .lst-formations hr{
     width: 50%;
     border: none;
@@ -356,7 +352,7 @@ nav{
 
 /* work */
 #projets{
-    height: 105vh;
+    height: 110vh;
 }
 
 .work-container{
