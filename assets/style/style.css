@@ -284,11 +284,7 @@ nav{
 .cards img{
     width: 25vh;
     transform-style: preserve-3d;
-}
-
-.card
-{
-    transform-style: preserve-3d;
+    cursor: pointer;
 }
 
 .card1 h3{
@@ -305,6 +301,10 @@ nav{
 
 .card4 h3{
     margin-left: 19px;
+}
+
+.a-card{
+    cursor: pointer;
 }
 
 .a-card p{
