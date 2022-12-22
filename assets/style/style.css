@@ -127,7 +127,7 @@ nav{
 
 /* first banner */
 .banner-img1{
-    background-image: url(../img/svg/Groupe\ 18.svg);
+    background-image: url(../img/png/bg-web1.png);
     background-repeat: no-repeat;
     background-attachment: fixed;
     width: 100%;
@@ -136,7 +136,7 @@ nav{
 
 /* second banner */
 .banner-img2{
-    background-image: url(../img/svg/Groupe\ 19.svg);
+    background-image: url(../img/png/bg-web2.png);
     background-repeat: no-repeat;
     background-attachment: fixed;
     width: 100%;
@@ -145,7 +145,7 @@ nav{
 
 /* third banner */
 .banner-img3{
-    background-image: url(../img/svg/Groupe\ 20.svg);
+    background-image: url(../img/png/bg-web3.png);
     background-repeat: no-repeat;
     background-attachment: fixed;
     width: 100%;
@@ -153,26 +153,29 @@ nav{
 }
 
 /* formation */
+#formations{
+    height: 105vh;
+    border-top: 2px solid #E5313B;
+    border-bottom: 2px solid #E5313B;
+}
+
 .formations-container {
     background-image: url(../img/png/bg3.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
-    width: 100%;
-    height: 100vh;
     font-family: 'Roboto Mono', monospace;
     color: #E5313B;
     display: flex;
     justify-content: space-around;
-    border-top: 2px solid #E5313B;
-    border-bottom: 2px solid #E5313B;
 }
 
 .formations{
     display: flex;
     width: 70vw;
     gap: 15vh;
+    height: 105vh;
 }
 
 .title-formations{
@@ -187,25 +190,37 @@ nav{
     background-color: #262335;
     border-left: 2px solid #E5313B;
     border-right: 2px solid #E5313B;
-    padding: 3vh;
     display: flex;
     flex-direction: column;
-}
-
-.lst-formations h4{
-    margin-block-start: 4vh;
-    margin-block-end: 0px;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
+    justify-content: center;
+    gap: 3vh;
 }
 
 .lst-formations span{
-    font-style: italic;
-    font-weight: lighter;
+    font-weight: bold;
+    font-size: 1.3em;
+    line-height: 6vh;
 }
 
-.logo-la-manu img{
-    width: 25vh;
+.lst-formations p{
+    font-size: 1.1em;
+}
+
+.lst-formations img{
+    width: 30vh;
+}
+
+.lst-formations hr{
+    width: 50%;
+    border: none;
+    height: 2px;
+    background-color: #E5313B;
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+}
+
+.wrapper-formations{
+    padding: 3vh;
 }
 
 .myself{
@@ -336,13 +351,17 @@ nav{
 }
 
 /* work */
+#projets{
+    height: 105vh;
+}
+
 .work-container{
     background-image: url(../img/png/bg.png);
     background-size: cover;
     background-attachment: fixed;
     color: #E5313B;
     font-family: 'Roboto Mono', monospace;
-    height: 100vh;
+    height: 100%;
     margin-top: -2%;
     border-top: 2px solid #E5313B;
 }
@@ -560,6 +579,12 @@ footer{
     }
 
     /* formation */
+    #formations{
+        margin-top: 100vh;
+        border-top: 2px solid #E5313B;
+        border-bottom: 2px solid #E5313B;
+    }
+    
     .formations-container {
         background-attachment: local;
         width: 100%;
@@ -576,13 +601,13 @@ footer{
     }
 
     .lst-formations{
-        border: 2px solid #E5313B;
-        margin: 3vh;
+        width: 100%;
+        border: none;
     }
 
     .myself{
         background-color: #262335;
-        border: 0px;
+        border: none;
         width: 100vw;
         margin-top: 0vh;
     }
@@ -656,8 +681,7 @@ footer{
     }
 
     .img-work-container img{
-        width: 60%;
-        padding: 5vh;
+        display: none;
     }
 
     .experience-container p{
