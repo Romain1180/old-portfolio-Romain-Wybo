@@ -164,18 +164,20 @@ h2{
     height: 105vh;
     border-top: 2px solid #E5313B;
     border-bottom: 2px solid #E5313B;
-}
-
-.formations-container {
     background-image: url(../img/png/bg3.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
+}
+
+.formations-container {
     font-family: 'Roboto Mono', monospace;
     color: #E5313B;
     display: flex;
     justify-content: space-between;
+    overflow: hidden;
+    /* background-color: green; */
 }
 
 .formations{
@@ -258,7 +260,7 @@ h2{
 .container-competences{
     background-color: #262335;
     height: 130vh;
-    margin-top: -2%;
+    margin-top: -3%;
 }
 
 .container-competences h2{
@@ -373,8 +375,6 @@ h2{
 
 .experience-container{
     padding: 3vh;
-    /* border-left: 2px solid #E5313B;
-    border-right: 2px solid #E5313B; */
 }
 
 .experience-container p{
@@ -391,7 +391,7 @@ footer{
     background-color: #E5313B;
     color: #262335;
     font-family: 'Roboto Mono', monospace;
-    /* margin-top: -1%; */
+    margin-top: -.8%;
 }
 
 .container-footer{
