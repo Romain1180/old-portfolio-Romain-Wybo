@@ -125,6 +125,13 @@ nav{
     margin: 20px;
 }
 
+h2{
+    font-family: 'Roboto Mono', monospace;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #25E1ED;
+}
+
 /* first banner */
 .banner-img1{
     background-image: url(../img/png/bg-web1.png);
@@ -168,32 +175,27 @@ nav{
     font-family: 'Roboto Mono', monospace;
     color: #E5313B;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 
 .formations{
     display: flex;
-    width: 70vw;
+    width: 100%; 
     gap: 15vh;
     height: 105vh;
 }
 
 .title-formations{
-    font-family: Game Of Squids;
-    text-transform: uppercase;
-    color: #25E1ED;
     display: flex;
     justify-content: center;
 }
 
 .lst-formations{
     background-color: #262335;
-    border-left: 2px solid #E5313B;
     border-right: 2px solid #E5313B;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    gap: 3vh;
 }
 
 .lst-formations span{
@@ -206,17 +208,11 @@ nav{
     font-size: 1.1em;
 }
 
-.lst-formations hr{
-    width: 50%;
-    border: none;
-    height: 2px;
-    background-color: #E5313B;
-    margin-top: 5vh;
-    margin-bottom: 5vh;
-}
 
 .wrapper-formations{
-    padding: 3vh;
+    padding-right: 9vh;
+    padding-left: 9vh;
+    padding-top: 9vh;
 }
 
 .wrapper-formations img{
@@ -229,11 +225,13 @@ nav{
     border-left: 2px solid #E5313B;
     border-right: 2px solid #E5313B;
     border-top: 2px solid #E5313B;
-    width: 30vw;
+    width: 50vw;
     display: flex;
     flex-direction: column;
     align-items: center;
     margin-top: 15vh;
+    margin-left: 15vh;
+    margin-right: 15vh;
 }
 
 .myself img{
@@ -243,11 +241,6 @@ nav{
 .myself p{
     padding: 3vh;
     margin-top: -1vh;
-}
-
-.myself h2{
-    font-family: Game Of Squids;
-    text-transform: uppercase;
 }
 
 .myself span{
@@ -264,9 +257,6 @@ nav{
 .container-competences h2{
     display: flex;
     justify-content: center;
-    color: #25E1ED;
-    font-family: Game Of Squids;
-    text-transform: uppercase;
     padding: 10vh;
 }
 
@@ -355,9 +345,6 @@ nav{
     display: flex;
     justify-content: center;
     text-align: center;
-    color: #25E1ED;
-    text-transform: uppercase;
-    font-family: Game Of Squids;
     padding: 10vh;
 }
 
@@ -532,6 +519,10 @@ footer{
         transition: .3s ease-in-out;
     }
 
+    nav{
+       display: none;
+    }
+
     /* first banner */
     .banner-img1{
         background-image: url(../img/png/mobile-bg1.png);
@@ -564,12 +555,13 @@ footer{
 
     /* formation */
     #formations{
-        margin-top: 100vh;
+        margin-top: 110vh;
         border: none;
     }
     
     .formations-container {
-        background-attachment: local;
+        background-image: none;
+        background-color: #262335;
         width: 100%;
         height: 215vh;
         border-top: 0px;
@@ -586,20 +578,21 @@ footer{
     .lst-formations{
         width: 100%;
         border: none;
+        text-align: center;
     }
 
     .myself{
         background-color: #262335;
         border: none;
         width: 100vw;
-        margin-top: 0vh;
+        margin: 0%;
     }
     
     .myself img{
         width: 100%;
     }
     
-    .myself p{
+    .wrapper-formations{
         padding: 3vh;
     }
 
@@ -642,13 +635,13 @@ footer{
 
     /* work */
     .work-container{
-        background-image: url(../img/png/bg.png);
-        background-size: cover;
-        background-attachment: local;
+        background-image:none;
+        background-color: #262335;
         padding: 1vh;
         height: 150vh;
         margin-top: -2%;
         padding: 0%;
+        text-align: center;
     }
     
     .work-container h2{
