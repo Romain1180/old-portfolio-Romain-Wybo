@@ -2,7 +2,7 @@
     font-family: "Game Of Squids";
     src: url("../fonts/GameOfSquids.otf") format("opentype");
 }
-   
+
 body{
     margin: 0%;
     padding: 0%;
@@ -185,16 +185,24 @@ h2{
     height: 105vh;
 }
 
-.title-formations{
+.title-formations h2{
     display: flex;
     justify-content: center;
+    writing-mode: vertical-lr;
+    transform: rotate(180deg);
+    font-size: 4em;
+    letter-spacing: .1em;
+}
+
+.mobile-title-formation{
+    display: none;
 }
 
 .lst-formations{
     background-color: #262335;
     border-right: 2px solid #E5313B;
     display: flex;
-    flex-direction: column;
+    align-items: center;
     justify-content: center;
 }
 
@@ -207,7 +215,6 @@ h2{
 .lst-formations p{
     font-size: 1.1em;
 }
-
 
 .wrapper-formations{
     padding-right: 9vh;
@@ -250,7 +257,7 @@ h2{
 /* comptétences */
 .container-competences{
     background-color: #262335;
-    height: 120vh;
+    height: 130vh;
     margin-top: -2%;
 }
 
@@ -258,6 +265,7 @@ h2{
     display: flex;
     justify-content: center;
     padding: 10vh;
+    font-size: 3em;
 }
 
 .cards
@@ -339,30 +347,34 @@ h2{
     height: 100%;
     margin-top: -2%;
     border-top: 2px solid #E5313B;
+    display: flex;
+    justify-content: center;
+}
+
+.img-work-container{
+    background-color: #262335;
+    display: flex;
+    justify-content: center;
 }
 
 .work-container h2{
     display: flex;
-    justify-content: center;
-    text-align: center;
-    padding: 10vh;
+    justify-content: space-around;
+    writing-mode: vertical-lr;
+    transform: rotate(180deg);
+    font-size: 4em;
+    letter-spacing: .1em;
+    padding: 3vh;
 }
 
-.img-work-container{
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    flex-wrap: wrap;
-}
-
-.img-work-container img{
-    width: 20vw;
+.mobile-title-work{
+    display: none;
 }
 
 .experience-container{
-    background-color: #262335;
     padding: 3vh;
-    border: 2px solid #E5313B;
+    /* border-left: 2px solid #E5313B;
+    border-right: 2px solid #E5313B; */
 }
 
 .experience-container p{
@@ -379,13 +391,13 @@ footer{
     background-color: #E5313B;
     color: #262335;
     font-family: 'Roboto Mono', monospace;
+    /* margin-top: -1%; */
 }
 
 .container-footer{
     margin-left: 40vh;
     margin-right: 40vh;
     height: 45vh;
-    margin-top: -2%;
 }
 
 .nav-footer{
@@ -482,8 +494,13 @@ footer{
 /* mobile/ipad responsive */
 @media only screen and (max-width:1024px) {
 
+    body{
+        background-color: #262335;
+    }
+
     header{
         width: 100%;
+        height: 100vh;
     }
 
     .my-name{
@@ -525,38 +542,27 @@ footer{
 
     /* first banner */
     .banner-img1{
-        background-image: url(../img/png/mobile-bg1.png);
-        background-repeat: no-repeat; 
-        background-attachment:local; 
-        background-position: center;
-        width: 100%;
-        height: 20%;
+        background-image: none;
+        height: 0vh;
     }
 
     /* second banner */
     .banner-img2{
-        background-image: url(../img/png/mobile-bg2.png);
-        background-repeat: no-repeat;
-        background-attachment: local;
-        background-position: center;
-        width: 100%;
-        height: 20%;
+        background-image:none;
+        height: 0vh;
     }
 
     /* third banner */
     .banner-img3{
-        background-image: url(../img/png/mobile-bg3.png);
-        background-repeat: no-repeat;
-        background-attachment:local;
-        background-position: center;
-        width: 100%;
-        height: 20%;
+        background-image:none;
+        height: 0vh;
     }
 
     /* formation */
     #formations{
-        margin-top: 110vh;
+        margin-top: 0vh;
         border: none;
+        border-top: 2px solid #E5313B; 
     }
     
     .formations-container {
@@ -572,20 +578,39 @@ footer{
         display: flex;
         width: 100vw;
         gap: 15vh;
-        flex-direction: column-reverse;
+        flex-direction: column;
+    }
+
+    .title-formations h2{
+        display: none;
+    }
+
+    .mobile-title-formation{
+        display: flex;
+        justify-content: center;
+        font-size: 1.1em;
+        padding: 3vh;
+    }
+
+    .wrapper-formations{
+        padding-right: 0vh;
+        padding-left: 0vh;
+        padding-top: 0vh;
     }
 
     .lst-formations{
         width: 100%;
         border: none;
         text-align: center;
+        display: flex;
+        flex-direction: column;
     }
 
     .myself{
         background-color: #262335;
         border: none;
         width: 100vw;
-        margin: 0%;
+        margin: -100 0 0 0;
     }
     
     .myself img{
@@ -603,12 +628,14 @@ footer{
     /* compétences */
     .container-competences{
         background-color: #262335;
-        margin-top: -10%;
+        margin-top: 100vh;
         height: 200vh;
+        border-top: 2px solid #E5313B; 
     }
 
     .container-competences h2{
         text-align: center;
+        font-size: 1.5em;
     }
 
     .cards img{
@@ -634,22 +661,34 @@ footer{
     }
 
     /* work */
+    #projets{
+        background-color: #262335;
+        border-top: 2px solid #E5313B; 
+    }
+
     .work-container{
         background-image:none;
-        background-color: #262335;
         padding: 1vh;
-        height: 150vh;
-        margin-top: -2%;
+        margin-top: 0%;
         padding: 0%;
         text-align: center;
+        border: 0px;
+        display: block;
     }
     
     .work-container h2{
-        padding: 5vh;
+        display: none;
     }
 
-    .img-work-container img{
-        display: none;
+    .mobile-title-work{
+        display: flex;
+        justify-content: center;
+        padding: 3vh;
+        font-size: 1.1em;
+    }
+
+    .img-work-container{
+        display: flex;
     }
     
     .experience-container{
@@ -699,5 +738,9 @@ footer{
       /* formation */
       .formations-container {
         height: 250vh;
+    }
+
+    #Mes_competences{
+        margin-top: 150vh;
     }
 }
