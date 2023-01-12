@@ -725,6 +725,7 @@ footer{
     .experience-container2{
         border: none;
         flex-direction: column;
+        padding: 0vh;
     }
 
     .experience-container2 img{
