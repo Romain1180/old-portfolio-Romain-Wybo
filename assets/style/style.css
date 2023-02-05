@@ -177,7 +177,6 @@ h2{
     display: flex;
     justify-content: space-between;
     overflow: hidden;
-    /* background-color: green; */
 }
 
 .formations{
@@ -239,12 +238,11 @@ h2{
     flex-direction: column;
     align-items: center;
     margin-top: 15vh;
-    margin-left: 15vh;
     margin-right: 15vh;
 }
 
 .myself img{
-    width: 100%;
+    width: 80%;
 }
 
 .myself p{
@@ -287,9 +285,32 @@ h2{
     cursor: pointer;
 }
 
-.a-card{
-    cursor: pointer;
+.score{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 40px;
 }
+
+.score div {
+    height: 5px;
+    background-color: #E5313B;
+}
+
+.score p {
+    color: white;
+    font-family: 'Roboto Mono', monospace;
+}
+
+.sc1 div{ width: 80%;}
+
+.sc2 div{ width: 75%;}
+
+.sc3 div{ width: 70%;}
+
+.sc4 div{ width: 65%;}
+
+.a-card{cursor: pointer;}
 
 .a-card p{
     color: #E5313B;
@@ -297,15 +318,6 @@ h2{
     display: flex;
     justify-content: center;
 
-}
-
-.container-competences hr{
-    height: 2px;
-    background-color: #E5313B;
-    border: none;
-    margin-top: 10vh;
-    margin-left: 40vh;
-    margin-right: 40vh;
 }
 
 .container-competences h4{
@@ -337,7 +349,8 @@ h2{
 
 /* work */
 #projets{
-    height: 110vh;
+    height: 100vh;
+    overflow: hidden;
 }
 
 .work-container{
@@ -352,13 +365,11 @@ h2{
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
 }
 
 .web-title-work h2{
     display: flex;
-    justify-content: space-around;
-    writing-mode: vertical-lr;
-    transform: rotate(180deg);
     font-size: 4em;
     letter-spacing: .1em;
     padding: 3vh;
@@ -366,19 +377,39 @@ h2{
 
 .img-work-container{
     display: flex;
-    justify-content: center;
     align-items: center;
-    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    animation: slide 15s linear infinite;
 }
 
-.mobile-title-work{
+/* .mobile-title-work{
     display: none;
-}
+} */
 
 .experience-container{
-    padding: 3vh;
+    padding: 5vh;
     display: flex;
-    justify-content: center;
+    align-items: center;
+}
+
+.slide1{
+    display: flex;
+    width: 100%;
+}
+
+.slide2{
+    display: flex;
+    width: 100%;
+}
+
+@keyframes slide {
+    0%{
+        transform: translate(0, 0);
+    }
+    100%{
+        transform: translate(-100%, 0);
+    }
 }
 
 .experience-container img{
@@ -395,17 +426,11 @@ h2{
     margin: 1vw;
     width: 100%;
     height: 100%;
+    transition: .3s ease-in-out;
 }
 
-.experience-container2{
-    padding: 3vh;
-    display: flex;
-    justify-content: center;
-}
-
-.experience-container2 img{
-    width: 35vw;
-    margin-bottom: 3vh;
+.projets:hover{
+    transform: scale(1.05);
 }
 
 /* footer */
@@ -686,50 +711,51 @@ footer{
     #projets{
         background-color: #262335;
         border-top: 2px solid #E5313B; 
+        height: 110vh;
+        overflow: visible;
     }
 
     .work-container{
         background-image:none;
         padding: 1vh;
-        margin-top: 0%;
+        margin-top: 100%;
         padding: 0%;
         text-align: center;
-        border: 0px;
-        display: block;
+        border: none;
     }
     
     .work-container h2{
-        display: none;
-    }
-
-    .mobile-title-work{
         display: flex;
         justify-content: center;
         padding: 3vh;
-        font-size: 1.1em;
+        font-size: 1.5em;
     }
 
     .img-work-container{
-        display: flex;
+        animation: none;
     }
     
     .experience-container{
         border: none;
-        flex-direction: column;
+        overflow: hidden;
     }
 
     .experience-container img{
         width: 100vw;
     }
 
-    .experience-container2{
-        border: none;
+    .slide1{
+        display: flex;
+        justify-content: center;
+        align-items: center;
         flex-direction: column;
-        padding: 0vh;
     }
 
-    .experience-container2 img{
-        width: 100vw;
+    .slide2{
+        display: none;
+    }
+    .projets{
+        margin: 30px;
     }
 
     /* footer */
@@ -737,7 +763,7 @@ footer{
         margin-left: 0%;
         margin-right: 0%;
         height: 85vh;
-        margin-top: 120%;
+        margin-top: 200%;
     }
 
     .nav-footer{
@@ -775,5 +801,9 @@ footer{
 
     #Mes_competences{
         margin-top: 150vh;
+    }
+
+    #projets{
+        height: 130vh;
     }
 }
