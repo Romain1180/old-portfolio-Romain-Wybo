@@ -162,8 +162,6 @@ h2{
 /* formation */
 #formations{
     height: 105vh;
-    /* border-top: 2px solid #E5313B;
-    border-bottom: 2px solid #E5313B; */
     background-image: url(../img/png/bg-dark.png);
     background-position: center;
     background-repeat: no-repeat;
@@ -547,6 +545,10 @@ footer{
         height: 100vh;
     }
 
+    h2{
+        color: #E5313B;
+    }
+
     .my-name{
         display: flex;
         justify-content: center;
@@ -606,7 +608,6 @@ footer{
     #formations{
         margin-top: 0vh;
         border: none;
-        border-top: 2px solid #E5313B; 
     }
     
     .formations-container {
@@ -667,7 +668,6 @@ footer{
     .container-competences{
         margin-top: 100vh;
         height: 200vh;
-        border-top: 2px solid #E5313B; 
     }
 
     .container-competences h2{
@@ -681,7 +681,7 @@ footer{
     }
 
     .second-part{
-        margin-top: -10%;
+        margin-top: 0%;
     }
 
     .cards-adobe{
@@ -697,9 +697,14 @@ footer{
        width: 15vh;
     }
 
+    .score{
+        display: flex;
+        align-items: start;
+        flex-direction: column;
+    }
+
     /* work */
     #projets{
-        border-top: 2px solid #E5313B; 
         height: 110vh;
         overflow: visible;
     }
