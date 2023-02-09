@@ -90,6 +90,11 @@ nav{
     height: 100%;
 }
 
+.nav-logo img{
+   width: 3vw;
+   height: 3vw;
+}
+
 .lst-nav{
     display: flex;
     gap: 3vh;
