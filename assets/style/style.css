@@ -7,13 +7,13 @@ body{
     margin: 0%;
     padding: 0%;
     box-sizing: border-box;
-    background-color: #1B1926;
+    background-color: #000000;
 }
 
 /* header */
 header{
     height: 90vh;
-    background-color: #262335;
+    background-color: #272727;
 }
 
 .container-header{
@@ -72,7 +72,7 @@ header{
 
 /* nav */
 nav{
-    background-color: #E5313B;
+    background-color: #000000;
     height: 10vh;
     top: 0%;
     position: sticky;
@@ -83,7 +83,7 @@ nav{
     display: flex;
     justify-content: space-around;
     align-items: center;
-    color: #262335;
+    color: white;
     font-family: 'Roboto Mono', monospace;
     font-weight: bold;
     margin-top: 0%;
@@ -97,7 +97,7 @@ nav{
 
 .lst-nav a {
     text-decoration: none;
-    color: #262335;
+    color: white;
     position: relative;
     transition: .2s ease-in-out;
 }
@@ -111,7 +111,7 @@ nav{
     left: 0;
     right: 0;
     height: 3px;
-    background: #262335;
+    background: white;
     z-index: 1;
     transition: .4s ease-in-out;
 }
@@ -129,12 +129,12 @@ h2{
     font-family: 'Roboto Mono', monospace;
     font-weight: bold;
     text-transform: uppercase;
-    color: #25E1ED;
+    color: white;
 }
 
 /* first banner */
 .banner-img1{
-    background-image: url(../img/png/bg-web1.png);
+    background-image: url(../img/png/bg-web1-dark.png);
     background-repeat: no-repeat;
     background-attachment: fixed;
     width: 100%;
@@ -143,7 +143,7 @@ h2{
 
 /* second banner */
 .banner-img2{
-    background-image: url(../img/png/bg-web2.png);
+    background-image: url(../img/png/bg-web2-dark.png);
     background-repeat: no-repeat;
     background-attachment: fixed;
     width: 100%;
@@ -152,7 +152,7 @@ h2{
 
 /* third banner */
 .banner-img3{
-    background-image: url(../img/png/bg-web3.png);
+    background-image: url(../img/png/bg-web3-dark.png);
     background-repeat: no-repeat;
     background-attachment: fixed;
     width: 100%;
@@ -162,9 +162,9 @@ h2{
 /* formation */
 #formations{
     height: 105vh;
-    border-top: 2px solid #E5313B;
-    border-bottom: 2px solid #E5313B;
-    background-image: url(../img/png/bg3.png);
+    /* border-top: 2px solid #E5313B;
+    border-bottom: 2px solid #E5313B; */
+    background-image: url(../img/png/bg-dark.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -173,7 +173,7 @@ h2{
 
 .formations-container {
     font-family: 'Roboto Mono', monospace;
-    color: #E5313B;
+    color: white;
     display: flex;
     justify-content: space-between;
     overflow: hidden;
@@ -193,6 +193,7 @@ h2{
     transform: rotate(180deg);
     font-size: 4em;
     letter-spacing: .1em;
+    color: #E5313B;
 }
 
 .mobile-title-formation{
@@ -200,8 +201,10 @@ h2{
 }
 
 .lst-formations{
-    background-color: #262335;
+    background-color: #272727;
     border-right: 2px solid #E5313B;
+    border-top: 2px solid #E5313B;
+    border-bottom: 2px solid #E5313B;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -229,10 +232,8 @@ h2{
 }
 
 .myself{
-    background-color: #262335;
-    border-left: 2px solid #E5313B;
-    border-right: 2px solid #E5313B;
-    border-top: 2px solid #E5313B;
+    background-color: #272727;
+    border: 2px solid #E5313B;
     width: 50vw;
     display: flex;
     flex-direction: column;
@@ -251,12 +252,12 @@ h2{
 }
 
 .myself span{
-    color: #25E1ED;
+    color: #E5313B;
 }
 
 /* comptétences */
 .container-competences{
-    background-color: #262335;
+    background-color: #272727;
     height: 130vh;
     margin-top: -3%;
 }
@@ -313,7 +314,7 @@ h2{
 .a-card{cursor: pointer;}
 
 .a-card p{
-    color: #E5313B;
+    color: white;
     font-family: 'Roboto Mono', monospace;
     display: flex;
     justify-content: center;
@@ -325,7 +326,7 @@ h2{
     font-size: 1.5em;
     margin: 7vh;
     text-transform: uppercase;
-    color: #25E1ED;
+    color: white;
     display: flex;
     justify-content: center;
     
@@ -354,10 +355,10 @@ h2{
 }
 
 .work-container{
-    background-image: url(../img/png/bg.png);
+    background-image: url(../img/png/bg-dark.png);
     background-size: cover;
     background-attachment: fixed;
-    color: #E5313B;
+    color: white;
     font-family: 'Roboto Mono', monospace;
     height: 100%;
     margin-top: -2%;
@@ -370,7 +371,7 @@ h2{
 
 .web-title-work h2{
     display: flex;
-    font-size: 4em;
+    font-size: 3em;
     letter-spacing: .1em;
     padding: 3vh;
 }
@@ -418,7 +419,7 @@ h2{
 }
 
 .projets{
-    background-color: #262335;
+    background-color: #272727;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -435,8 +436,8 @@ h2{
 
 /* footer */
 footer{
-    background-color: #E5313B;
-    color: #262335;
+    background-color: #000000;
+    color: white;
     font-family: 'Roboto Mono', monospace;
     margin-top: -.8%;
 }
@@ -460,7 +461,7 @@ footer{
 .nav-footer li {list-style: none;}
 
 .nav-footer a{
-    color: #262335;
+    color: white;
     text-decoration: none;
     position: relative;
     transition: .2s ease-in-out;
@@ -475,7 +476,7 @@ footer{
     left: 0;                      
     right: 0;                                    
     height: 3px;
-    background: #262335;
+    background: white;
     z-index: 1;
     transition: .4s ease-in-out;
 }
@@ -487,7 +488,7 @@ footer{
 
 .container-footer hr{
     height: 2px;
-    background-color: #262335;
+    background-color: white;
     border: none;
     width: 100%;
 }
@@ -523,17 +524,17 @@ footer{
 }
 
 ::-webkit-scrollbar-track {
-    background-color: #1B1926;
+    background-color: #272727;
     margin-top: 3px;
     margin-bottom: 3px;
 }
 
 ::-webkit-scrollbar-thumb {
-    background-color: #25E1ED;
+    background-color: #E5313B;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-    background-color: #E5313B;
+    background-color: #cf2d35;
 }
 
 
@@ -542,7 +543,7 @@ footer{
 @media only screen and (max-width:1024px) {
 
     body{
-        background-color: #262335;
+        background-color: #272727;
     }
 
     header{
@@ -614,7 +615,6 @@ footer{
     
     .formations-container {
         background-image: none;
-        background-color: #262335;
         width: 100%;
         height: 215vh;
         border-top: 0px;
@@ -654,7 +654,6 @@ footer{
     }
 
     .myself{
-        background-color: #262335;
         border: none;
         width: 100vw;
         margin: -100 0 0 0;
@@ -674,7 +673,6 @@ footer{
 
     /* compétences */
     .container-competences{
-        background-color: #262335;
         margin-top: 100vh;
         height: 200vh;
         border-top: 2px solid #E5313B; 
@@ -709,7 +707,6 @@ footer{
 
     /* work */
     #projets{
-        background-color: #262335;
         border-top: 2px solid #E5313B; 
         height: 110vh;
         overflow: visible;
