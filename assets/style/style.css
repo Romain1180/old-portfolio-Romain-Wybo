@@ -384,10 +384,6 @@ h2{
     animation: slide 15s linear infinite;
 }
 
-/* .mobile-title-work{
-    display: none;
-} */
-
 .experience-container{
     padding: 5vh;
     display: flex;
@@ -665,10 +661,6 @@ footer{
     
     .wrapper-formations{
         padding: 3vh;
-    }
-
-    .myself h2{
-       color: #25E1ED;
     }
 
     /* compétences */
