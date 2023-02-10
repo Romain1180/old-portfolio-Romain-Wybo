@@ -31,7 +31,7 @@ header{
 }
 
 .my-name h1{
-    font-family: Game Of Squids;
+    font-family: Game Of Squids,'Roboto Mono', monospace;
     color: white;
     font-size: 5.5em;
 }
@@ -310,31 +310,6 @@ h2{
     cursor: pointer;
 }
 
-.score{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin-top: 40px;
-}
-
-.score div {
-    height: 5px;
-    background-color: #E5313B;
-}
-
-.score p {
-    color: white;
-    font-family: 'Roboto Mono', monospace;
-}
-
-.sc1 div{ width: 80%;}
-
-.sc2 div{ width: 75%;}
-
-.sc3 div{ width: 70%;}
-
-.sc4 div{ width: 65%;}
-
 .a-card{cursor: pointer;}
 
 .a-card p{
@@ -353,7 +328,10 @@ h2{
     color: white;
     display: flex;
     justify-content: center;
-    
+}
+
+.second-part{
+    margin-top: 10vh;
 }
 
 .cards-adobe{
