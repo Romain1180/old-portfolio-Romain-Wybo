@@ -26,14 +26,37 @@ header{
 .my-name{
     display: flex;
     justify-content: center;
+    align-items: center;
+    margin-top: 5vh;
 }
 
 .my-name h1{
     font-family: Game Of Squids;
     color: white;
     font-size: 5.5em;
-    margin-top: 15vh;
+    /* margin-top: 15vh; */
 }
+
+.my-name span{
+    height: 10vh;
+    width: .5vw;
+    background-color: white;
+    /* margin-top: 15vh; */
+    animation: barre-anime 1s linear infinite;
+}
+
+@keyframes barre-anime {
+    0%{
+        opacity: 100%;
+    }
+    50%{
+        opacity: 0%;
+    }
+    100%{
+        opacity: 100%;
+    }
+}
+
 
 .contact-header{
     display: flex;
@@ -557,11 +580,16 @@ footer{
     .my-name{
         display: flex;
         justify-content: center;
+        align-items: center;
     }
     
     .my-name h1{
         font-size: 2.5em;
-        margin-top: 17vh;
+    }
+
+    .my-name span{
+        height: 5vh;
+        width: 1vw;
     }
 
     .container-nav{
