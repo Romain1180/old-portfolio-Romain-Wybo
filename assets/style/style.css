@@ -34,14 +34,12 @@ header{
     font-family: Game Of Squids;
     color: white;
     font-size: 5.5em;
-    /* margin-top: 15vh; */
 }
 
 .my-name span{
     height: 10vh;
     width: .5vw;
     background-color: white;
-    /* margin-top: 15vh; */
     animation: barre-anime 1s linear infinite;
 }
 
