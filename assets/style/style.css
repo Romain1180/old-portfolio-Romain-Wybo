@@ -188,7 +188,7 @@ h2{
 /* formation */
 #formations{
     height: 105vh;
-    background-image: url(../img/png/bg-dark.png);
+    background-image: url(../img/png/bg-dark2.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -357,7 +357,7 @@ h2{
 }
 
 .work-container{
-    background-image: url(../img/png/bg-dark.png);
+    background-image: url(../img/png/bg-dark2.png);
     background-size: cover;
     background-attachment: fixed;
     color: white;
