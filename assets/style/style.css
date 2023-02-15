@@ -535,6 +535,11 @@ footer{
     background-color: #cf2d35;
 }
 
+::selection {
+    color: #000000;
+    background-color: white;
+  }
+
 
 
 /* mobile/ipad responsive */
