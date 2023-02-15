@@ -516,23 +516,26 @@ footer{
 }
 
 /* sroll-bar */
+/* width */
 ::-webkit-scrollbar {
-    width: 1.2vw;
-    height: 2vh;
+    width: 5px;
+    border-radius: 90%;
 }
 
+/* Track */
 ::-webkit-scrollbar-track {
-    background-color: #272727;
-    margin-top: 3px;
-    margin-bottom: 3px;
+    background: #f1f1f100;
 }
 
+/* Handle */
 ::-webkit-scrollbar-thumb {
-    background-color: #E5313B;
+    background: #4b4b4b;
+    border-radius: 500px;
 }
 
+/* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-    background-color: #cf2d35;
+    background: #555;
 }
 
 ::selection {
